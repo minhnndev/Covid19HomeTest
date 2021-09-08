@@ -3,7 +3,7 @@ import {COLORS, SIZES} from '../../constants/theme';
 export const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    marginTop: 20,
+    paddingTop: 20,
   },
   btnItem: {
     backgroundColor: COLORS.white,

@@ -3,7 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MaterialIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {COLORS} from '../constants/theme';
 
-import {Home, Scan, Category} from '../screens';
+import {Home, Scan, Category, ScanHistory} from '../screens';
 
 const Tab = createBottomTabNavigator();
 

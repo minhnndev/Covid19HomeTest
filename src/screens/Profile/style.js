@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import THEME from '../../constants/theme'
+import {COLORS, SIZES} from '../../constants/theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     padding: 10,
   },
   user: {
-    backgroundColor: THEME.COLORS.primary,
+    backgroundColor: COLORS.primary,
     alignItems: 'center',
     paddingTop: 15,
     paddingBottom: 15,
@@ -17,18 +17,18 @@ export const styles = StyleSheet.create({
   name: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: THEME.COLORS.white,
+    color: COLORS.white,
   },
   phone: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: THEME.COLORS.white,
+    color: COLORS.white,
   },
   infor: {
     padding: 20,
   },
   btnEdit: {
-    backgroundColor: THEME.COLORS.primary,
+    backgroundColor: COLORS.primary,
     width: 100,
     height: 40,
     justifyContent: 'center',
@@ -37,7 +37,7 @@ export const styles = StyleSheet.create({
   },
   textEdit: {
     fontSize: 14,
-    color: THEME.COLORS.white,
+    color: COLORS.white,
     fontWeight: 'bold',
   },
   listMember: {
@@ -53,12 +53,12 @@ export const styles = StyleSheet.create({
     width: 300,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: THEME.COLORS.primary,
+    backgroundColor: COLORS.primary,
     borderRadius: 4,
   },
   textMember: {
     fontSize: 14,
-    color: THEME.COLORS.white,
+    color: COLORS.white,
     fontWeight: 'bold',
   },
 });
