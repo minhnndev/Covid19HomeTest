@@ -10,6 +10,7 @@ import {SIZES} from '../../constants/theme';
 const iconScanColor = 'rgba(255,255,255,0.3)';
 
 const Scan = () => {
+  var scanner: Scanner;
   const onSuccess = e => {
     Linking.openURL(e.data).catch(err =>
       console.error('An error occured', err),
@@ -30,6 +31,10 @@ const Scan = () => {
   return (
     <QRCodeScanner
       showMarker
+      reactivate
+      ref={node => {
+        scanner = node;
+      }}
       onRead={onSuccess}
       // flashMode={RNCamera.Constants.FlashMode.torch}
       cameraStyle={{height: SIZES.height}}
