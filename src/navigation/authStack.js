@@ -1,20 +1,25 @@
 import React from 'react';
-import {Register, Login} from '../screens';
+import {Auth, Phone, AuthOTP} from '../screens';
 import {createStackNavigator} from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
 const authStack = () => {
   return (
-    <Stack.Navigator initialRouteName="Auth">
+    <Stack.Navigator initialRouteName="OTP">
+      {/* <Stack.Screen
+        name="Phone"
+        component={Phone}
+        options={{headerShown: false}}
+      /> */}
       <Stack.Screen
-        name="Register"
-        component={Register}
+        name="OTP"
+        component={AuthOTP}
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="Login"
-        component={Login}
+        name="Auth"
+        component={Auth}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

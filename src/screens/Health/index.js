@@ -2,12 +2,12 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import {styles} from './style';
 
-const Register = () => {
+function Health() {
   return (
     <View style={styles.container}>
-      <Text>Register</Text>
+      <Text>Health</Text>
     </View>
   );
-};
+}
 
-export default Register;
+export default Health;
